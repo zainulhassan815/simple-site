@@ -16,8 +16,6 @@
     justify-content: space-between;
     box-shadow: 0px 0px 5px var(--shadow-color);
     transition: all .3s ease-in;
-    position: fixed;
-    width: 100vw;
 }
 
 .logo-container{
@@ -34,7 +32,7 @@
     height: 7vh;
 }
 
-.title {
+.logo-name {
     font-weight: 600;
     color: var(--dark-blue);
     margin-left: .5rem;

@@ -10,8 +10,10 @@ body {
 }
 
 :root {
-    --dark-blue: #283845;
+    --dark-blue: #202c39;
     --shadow-color: #E8E5E1;
+    --light-blue: #283845;
+    --dark-shadow-color: rgba(0, 0, 0, .2);
 }
 
 a {
@@ -21,6 +23,64 @@ a {
 }
 
 .landing {
-    height: 100vh;
-    width: 100%;
+    height: 92vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.app-image {
+    height: 75%;
+}
+
+.title {
+    font-size: 3rem;
+    color: var(--dark-blue);
+}
+
+.tagline {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--light-blue);
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+}
+
+.download-btn , .promo-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: .5rem .8rem;
+    width: min-content;
+    border: 1px solid var(--light-blue);
+    border-radius: 5px;
+    margin: 2rem 0;
+    background-color: white;
+    box-shadow: 1px 1px 5px var(--dark-shadow-color);
+    cursor: pointer;
+}
+
+.download-btn:hover , .promo-btn:hover{
+    box-shadow: 3px 3px 5px var(--dark-shadow-color);
+}
+
+.icon{
+    height: 30px;
+}
+
+.download-btn p , .promo-btn p{
+    display: block;
+    width: max-content;
+    height: auto;
+    margin-left: .5rem;
+    color: var(--light-blue);
+}
+
+.promo-btn {
+    margin-left: 1rem;
 }
