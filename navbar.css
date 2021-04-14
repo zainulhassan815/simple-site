@@ -14,8 +14,15 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0px 0px 5px var(--shadow-color);
-    transition: all .3s ease-in;
+    box-shadow: 0px 0px 2px var(--shadow-color);
+    transition: all .2s ease-in;
+    position: fixed;
+    width: 100vw;
+    z-index: 3;
+}
+
+.navbar-scroll {
+    box-shadow: 0px 0px 10px var(--shadow-color);
 }
 
 .logo-container{
@@ -47,6 +54,8 @@
     font-size: 14px;
     border-radius: .3rem;
     order: 3;
+    transition: all ease-in .2s;
+    cursor: pointer;
 }
 
 .nav-link a {
@@ -62,6 +71,7 @@
 
 .nav-link:hover , .nav-link:focus {
     box-shadow: 1px 0px 6px var(--shadow-color);
+    transform: translate(0,-2px);
 }
 
 .nav-link a:hover {
