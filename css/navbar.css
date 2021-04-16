@@ -1,0 +1,132 @@
+.links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    background-color: white;
+    min-height: 8vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 2px var(--shadow-color);
+    transition: all .2s ease-in;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.navbar-scroll {
+    box-shadow: 0px 0px 10px var(--shadow-color);
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex: 1;
+    order: 1;
+    margin-left: 2rem;
+}
+
+.logo {
+    border-radius: 50%;
+    height: 7vh;
+}
+
+.logo-name {
+    font-weight: 600;
+    color: var(--dark-blue);
+    margin-left: .5rem;
+    font-size: 1.2rem;
+    pointer-events: none;
+    cursor: none;
+}
+
+.nav-link {
+    display: block;
+    margin-left: 8px;
+    font-size: 14px;
+    border-radius: .3rem;
+    order: 3;
+    transition: all ease-in .2s;
+    cursor: pointer;
+}
+
+.nav-link a {
+    font-size: .9rem;
+    padding: 6px 12px;
+    display: block;
+    text-align: center;
+}
+
+.nav-link:hover , .nav-link:focus {
+    box-shadow: 1px 0px 6px var(--shadow-color);
+    transform: translate(0,-2px);
+}
+
+.nav-link a:hover {
+    color : #1761BD;
+}
+
+.nav-link:last-of-type {
+    margin-right: 2rem;
+}
+
+.hamburger {
+    order: 2;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    padding: 6px 8px;
+    display: none;
+    margin-right: 2rem;
+}
+
+.hamburger > i {
+    color: var(--dark-blue);
+}
+
+.hamburger:hover , .nav-link:focus{
+    background-color: var(--shadow-color);
+}
+
+.nav-link.active {
+    width: 100%;
+    padding: .6rem 0;
+    display: block;
+    animation: expand .5s;
+}
+
+@keyframes expand {
+    from {
+        padding: 0;
+        opacity: 0;
+    }
+    to {
+        padding: .6rem 0;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-link {
+        display: none;
+        margin: 0;
+        width: 100%;
+    }
+
+    .nav-link:last-of-type {
+        margin-right: 0px;
+    }
+}

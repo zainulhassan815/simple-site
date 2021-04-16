@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>The QuickTips Store</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="links">
+            <li class="logo-container">
+                <img class="logo" src="assets/icons/logo.jpg" alt="Logo">
+                <p class="logo-name">QuickTips</p>
+            </li>
+            <button class="hamburger">
+                <i class="material-icons">menu</i>
+            </button>
+            <li class="nav-link home-btn">
+                <a href="#header">Home</a>
+            </li>
+            <li class="nav-link projects-btn">
+                <a href="#projects">Projects</a>
+            </li>
+            <li class="nav-link contact-btn">
+                <a href="#contact">Contact</a>
+            </li>
+            <li class="nav-link more-btn">
+                <a href="#footer">More Info</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header id="header" class="landing">
+        <div class="title-container">
+            <h1 class="title">The QuickTips Store</h1>
+            <p class="tagline">Get Awesome & Super Cool Resources For Apps</p>
+
+            <div class="btn-container">
+                <div class="btn download-btn">
+                    <img class="icon" src="assets/icons/playstore.png" alt="Playstore Icon">
+                    <p>Download App</p>
+                </div>
+                <div class="btn promo-btn">
+                    <img class="icon" src="assets/icons/youtube.svg" alt="YouTube Icon">
+                    <p>Watch Promo</p>
+                </div>
+            </div>
+
+        </div>
+        <img class="app-image" src="assets/images/app.svg" alt="App Image">
+    </header>
+
+    <section id="projects" class="projects-gallery">
+        <h2>Video Tutorials</h2>
+        <div class="projects-container">
+            <div class="project">
+                <img src="https://i.ytimg.com/vi/C42NAQJG6Eg/maxresdefault.jpg" alt="">
+                <p class="project-title">Overlapping in Kodular done right</p>
+            </div>
+            <div class="project">
+                <img src="https://kodular-community.s3.dualstack.eu-west-1.amazonaws.com/original/3X/2/0/208a746df40a9b5ddd5bb6582259248f8d966b81.jpeg" alt="">
+                <p class="project-title">Plyr Video Player | Awesome Cool UI</p>
+            </div>
+            <div class="project">
+                <img src="https://i.ytimg.com/vi/8FdvPk6MWwQ/maxresdefault.jpg" alt="">
+                <p class="project-title">Bring app to life with Lottie</p>
+            </div>
+            <div class="project">
+                <img src="https://i.ytimg.com/vi/kfiozFhNhdc/maxresdefault.jpg" alt="">
+                <p class="project-title">Fix Kodular Companion stuck at 20%</p>
+            </div>
+            <div class="project">
+                <img src="https://i.ytimg.com/vi/mC3j2-iRZzI/maxresdefault.jpg" alt="">
+                <p class="project-title">How to use Font-Awesome icons</p>
+            </div>
+            <div class="project">
+                <img src="https://i.ytimg.com/vi/LOKIpkI4BEc/maxresdefault.jpg" alt="">
+                <p class="project-title">Working with network in Kodular</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact US</h2>
+        <div class="contact-container">
+            <img class="contact-image" src="assets/images/contact.svg" alt="Contact US">
+            <form class="contact-form">
+                <input type="email" id="email" placeholder="Email">
+                <input type="text" id="subject" placeholder="Subject">
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="Description"></textarea>
+                <button class="submit-contact-btn" disabled=true>Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="footer" class="footer">
+        <ul class="footer-links">
+            <li class="footer-link">
+                <img class="icon-large" src="assets/icons/youtube.svg" alt="">
+                <p>YouTube</p>
+            </li>
+            <li class="footer-link">
+                <img class="icon-large" src="assets/icons/facebook.svg" alt="">
+                <p>Facebook</p>
+            </li>
+            <li class="footer-link">
+                <img class="icon-large" src="assets/icons/telegram.svg" alt="">
+                <p>Telegram</p>
+            </li>
+        </ul>
+    </section>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
